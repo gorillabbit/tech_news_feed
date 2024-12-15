@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["dotenv", "texttospeech"],
+  "cSpell.words": [
+    "Apim",
+    "dotenv",
+    "pycache",
+    "ssml",
+    "texttospeech",
+    "venv"
+  ],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "charliermarsh.ruff",
 }

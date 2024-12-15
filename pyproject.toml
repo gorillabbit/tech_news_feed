@@ -1,0 +1,29 @@
+[tool.ruff]
+preview = true
+fix = true
+line-length = 120
+lint.select = ["ALL"]  # チェック対象
+lint.ignore = [
+    "D100",  # Missing docstring in public module
+    "D203",  # one blank line before class
+    "D213",  # multi-line summary second line
+    "D400",  # First line should end with a period
+    "D415",  # First line should end with a period, question mark, or exclamation point
+    "TD001", # invalid todo tag
+    "TD002", # missing todo author
+    "TD003", # missing todo link
+    "PD011", # pandas use of dot values
+    "ERA001", # Found commented-out code
+    "CPY001", # copyright
+    "DOC201", # `return` is not documented in docstring
+]
+lint.unfixable = [
+    "F401", # unused import
+    "F841", # unused variable
+]
+exclude = [
+    "venv/",          # 仮想環境を除外
+    "__pycache__/",   # キャッシュディレクトリを除外
+    "migrations/"     # Djangoなどのマイグレーションファイルを除外
+]
+lint.fixable = ["ALL"]  # 自動修正可能なすべてのルールを有効化

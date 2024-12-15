@@ -1,15 +1,15 @@
 import openai
 
-def summarize_text(content, api_key):
-    print("open-ai", api_key)
+
+def summarize_text(content: str, api_key: str) -> str:
+    """openaiを使ってテキストを要約する"""
     openai.api_key = api_key
-    print(content)
     response = openai.ChatCompletion.create(
         model="gpt-4o",
         messages=[
             {"role": "user", "content": "Summarize the following article in Japanese."},
             {"role": "assistant", "content": content},
         ],
-        max_tokens=150
+        max_tokens=150,
     )
-    return response.choices[0].message['content']
+    return response.choices[0].message["content"]

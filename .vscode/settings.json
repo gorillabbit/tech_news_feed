@@ -1,0 +1,5 @@
+{
+  "cSpell.words": ["dotenv", "texttospeech"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "charliermarsh.ruff",
+}

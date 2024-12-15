@@ -1,8 +1,10 @@
 {
   "cSpell.words": [
     "Apim",
+    "beautifulsoup",
     "dotenv",
     "pycache",
+    "pytest",
     "ssml",
     "texttospeech",
     "venv"

@@ -24,18 +24,6 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Google Cloudの認証情報を作成
-      - name: Create Google credentials
-        run: |
-          echo '${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}' > credentials.json
-          echo "GOOGLE_APPLICATION_CREDENTIALS=$PWD/credentials.json" >> $GITHUB_ENV
-        shell: bash
-
-      - name: Debug Google credentials
-        run: |
-          ls -la credentials.json
-          cat credentials.json
-
       - name: Run main script
         env:
           BING_API_KEY: ${{ secrets.BING_API_KEY }}

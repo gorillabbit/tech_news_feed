@@ -1,6 +1,6 @@
 openai==0.27.0
 google-cloud-texttospeech==2.14.0
-slack_sdk==3.21.1
+slack_sdk==3.34.0
 beautifulsoup4==4.12.2
 requests==2.31.0
 python-dotenv==1.0.0
